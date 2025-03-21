@@ -9,7 +9,8 @@
   "maximum_discourse_version": null,
   "assets": {},
   "modifiers": {
-    "svg_icons": ["fire"]
+    "svg_icons": ["fire"],
+    "serialize_topic_is_hot": true
   },
   "components": [
     "https://github.com/discourse/discourse-sidebar-new-topic-button.git",

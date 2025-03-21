@@ -11,7 +11,7 @@ export default class TopicStatusColumn extends Component {
   }
 
   get badge() {
-    if (this.heatMap) {
+    if (this.args.topic.is_hot) {
       return {
         icon: "fire",
         text: "topic_hot",
