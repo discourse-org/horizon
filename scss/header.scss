@@ -73,13 +73,15 @@
   color: var(--accent-text-color);
 }
 
+/*
 .user-menu .quick-access-panel li,
 .user-notifications-list li,
 .user-menu .quick-access-panel li.do-not-disturb,
 .menu-panel .panel-body-bottom .btn,
 .menu-panel .panel-body-bottom .btn:hover {
-  // background-color: var(--d-content-background);
+   background-color: var(--d-content-background);
 }
+*/
 
 body.login-page,
 body.signup-page,
@@ -88,5 +90,119 @@ body.password-reset-page,
 body.activate-account-page {
   .d-header {
     background: var(--background-color);
+  }
+}
+
+// attempt to center the title
+// by mirroring the body grid
+
+.has-sidebar-page {
+  .d-header > .wrap {
+    .contents {
+      display: grid;
+      grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr);
+      grid-template-rows: auto;
+      gap: 0; // gap will ruin the alignment
+
+      .header-sidebar-toggle,
+      .home-logo-wrapper-outlet {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+      }
+
+      .home-logo-wrapper-outlet {
+        margin-left: 3.5em;
+        margin-right: 0;
+        max-width: 13em; // crosses into column 2 beyond this
+        overflow: hidden;
+      }
+
+      .extra-info-wrapper {
+        grid-column: 2;
+        grid-row: 1;
+
+        justify-self: center;
+
+        max-width: 59em; // width of topic + timeline
+        padding: 0;
+
+        @media screen and (max-width: 1350px) {
+          justify-self: start;
+
+          box-sizing: border-box;
+          padding-left: 3em;
+        }
+      }
+
+      .panel {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+
+        padding-right: 1em;
+
+        // the title and panel don't exist on the same plane
+        // so we let the panel overlap the title
+        // and fade it out so it looks intentional
+
+        background: var(--background-color);
+
+        @media screen and (max-width: 850px) {
+          background: var(--secondary);
+        }
+
+        &:before {
+          content: "";
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            var(--background-color) 80%
+          );
+          @media screen and (max-width: 850px) {
+            background: linear-gradient(
+              90deg,
+              rgba(255, 255, 255, 0) 0%,
+              var(--secondary) 80%
+            );
+          }
+          top: -0.5em;
+          bottom: 0;
+          height: 4em;
+          width: 3em;
+          left: -3em;
+          position: absolute;
+          display: flex;
+        }
+      }
+
+      // these will probably cause problems when used
+      .before-header-panel-outlet,
+      .after-header-panel-outlet {
+        grid-row: 1;
+      }
+
+      .before-header-panel-outlet {
+        &:has(.search-banner) {
+          grid-column: 2;
+        }
+
+        @media screen and (max-width: 1280px) {
+          .floating-search-input {
+            margin-left: 2.75em;
+            padding-right: 15em;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    &.search-header--visible
+      .floating-search-input
+      .search-banner-inner.wrap
+      .search-menu {
+      width: 100%;
+    }
   }
 }
