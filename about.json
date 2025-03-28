@@ -20,62 +20,86 @@
     "Horizon": {
       "primary": "1A1A1A",
       "secondary": "ffffff",
-      "tertiary": "595bca"
+      "tertiary": "595bca",
+      "tertiary-med-or-tertiary": "595bca",
+      "selected": "d7dfff"
     },
     "Horizon Dark": {
       "primary": "ffffff",
       "secondary": "1A1A1A",
-      "tertiary": "595bca"
+      "tertiary": "595bca",
+      "tertiary-med-or-tertiary": "595bca",
+      "selected": "3b3e56"
     },
     "Royal": {
       "primary": "1A1A1A",
       "secondary": "ffffff",
-      "tertiary": "4169e1"
+      "tertiary": "4169e1",
+      "tertiary-med-or-tertiary": "4169e1",
+      "selected": "c7e3ff"
     },
     "Royal Dark": {
       "primary": "ffffff",
       "secondary": "1A1A1A",
-      "tertiary": "4169e1"
+      "tertiary": "4169e1",
+      "tertiary-med-or-tertiary": "4169e1",
+      "selected": "3a455f"
     },
     "Clover": {
       "primary": "1A1A1A",
       "secondary": "ffffff",
-      "tertiary": "45a06e"
+      "tertiary": "45a06e",
+      "tertiary-med-or-tertiary": "45a06e",
+      "selected": "c6f1d5"
     },
     "Clover Dark": {
       "primary": "ffffff",
       "secondary": "1A1A1A",
-      "tertiary": "45a06e"
+      "tertiary": "45a06e",
+      "tertiary-med-or-tertiary": "45a06e",
+      "selected": "47594e"
     },
     "Lily": {
       "primary": "1A1A1A",
       "secondary": "ffffff",
-      "tertiary": "cc338c"
+      "tertiary": "cc338c",
+      "tertiary-med-or-tertiary": "cc338c",
+      "selected": "ffc8ee"
     },
     "Lily Dark": {
       "primary": "ffffff",
       "secondary": "1A1A1A",
-      "tertiary": "cc338c"
+      "tertiary": "cc338c",
+      "tertiary-med-or-tertiary": "cc338c",
+      "selected": "5f3e4e"
     },
     "Violet": {
       "primary": "1A1A1A",
       "secondary": "ffffff",
-      "tertiary": "9b15de"
+      "tertiary": "9b15de",
+      "tertiary-med-or-tertiary": "9b15de",
+      "selected": "feccff"
     },
     "Violet Dark": {
       "primary": "ffffff",
       "secondary": "1A1A1A",
-      "tertiary": "9b15de"
+      "tertiary": "9b15de",
+      "tertiary-med-or-tertiary": "9b15de",
+      "selected": "4c385c"
     },
     "Marigold": {
       "primary": "1A1A1A",
       "secondary": "ffffff",
-      "tertiary": "d3881f"
+      "tertiary": "d3881f",
+      "tertiary-med-or-tertiary": "d3881f",
+      "selected": "ffdcb2"
     },
     "Marigold Dark": {
       "primary": "ffffff",
       "secondary": "1A1A1A",
-      "tertiary": "d3881f"
+      "tertiary": "d3881f",
+      "tertiary-med-or-tertiary": "d3881f",
+      "selected": "6c5b49"
     }
   }
 }
