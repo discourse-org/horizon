@@ -29,12 +29,12 @@
 
         #reply-control:not(.fullscreen).hide-preview {
           width: 100%;
-          right: var(--d-border-radius-large);
+          right: var(--main-grid-gap);
           top: var(--header-offset);
-          bottom: var(--d-border-radius-large);
+          bottom: var(--main-grid-gap);
           left: unset;
           height: unset;
-          max-width: 32vw;
+          max-width: 36.5vw;
         }
 
         &.has-sidebar-page {
